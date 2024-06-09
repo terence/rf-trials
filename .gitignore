@@ -1,3 +1,5 @@
-results/log.html
-results/output.xml
-results/report.html
+log.html
+output.xml
+report.html
+*.log
+*.png
