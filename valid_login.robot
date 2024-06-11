@@ -8,8 +8,8 @@ Resource          resource.robot
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page
-    Input Username    demo
-    Input Password    mode
+    Input Username    ${VALID USER}
+    Input Password    ${VALID PASSWORD}
     Submit Credentials
     BuiltIn.Sleep 10s
     Welcome Page Should Be Open
