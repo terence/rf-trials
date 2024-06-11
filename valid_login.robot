@@ -11,6 +11,6 @@ Valid Login
     Input Username    ${VALID USER}
     Input Password    ${VALID PASSWORD}
     Submit Credentials
-    BuiltIn.Sleep 10s
+    BuiltIn.Sleep 10
     Welcome Page Should Be Open
     [Teardown]    Close Browser
