@@ -1,4 +1,4 @@
-*** Settings ***
+git p*** Settings ***
 Documentation     A resource file with reusable keywords and variables.
 ...
 ...               The system specific keywords created here form our own
