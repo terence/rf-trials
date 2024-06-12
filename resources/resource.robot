@@ -8,7 +8,7 @@ ${SERVER}         peaktutors.com
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${LOGIN URL}      https://${SERVER}/wp-admin/
-${WELCOME URL}    https://${SERVER}/welcome.html
+${WELCOME URL}    https://peaktutors.com/my-account/
 ${ERROR URL}      https://${SERVER}/error.html
 
 *** Keywords ***
@@ -38,4 +38,4 @@ Submit Credentials
 
 Welcome Page Should Be Open
     Location Should Be    ${WELCOME URL}
-    Title Should Be    Welcome Page
+    Title Should Be    My account | Peaktutors

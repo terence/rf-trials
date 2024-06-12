@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation     A test suite with a single test for valid login.
 ...
-Library             SeleniumLibrary
 Resource            resources/resource.robot
 Resource            pwd/password.resource
 
@@ -13,6 +12,6 @@ Valid Login
     Input Username    ${VALID USER}
     Input Password    ${VALID PASSWORD}
     Submit Credentials
-    Sleep 10
+    BuiltIn.Sleep   10s
     Welcome Page Should Be Open
     [Teardown]    Close Browser
