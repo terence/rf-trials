@@ -1,9 +1,11 @@
 *** Settings ***
 Documentation     A test suite with a single test for valid login.
 ...
-...               This test has a workflow that is created using keywords in
-...               the imported resource file.
-Resource          resource.robot
+Library             SeleniumLibrary
+Resource            resources/resource.robot
+Resource            pwd/password.resource
+
+#Variables           password.resource
 
 *** Test Cases ***
 Valid Login
@@ -11,6 +13,6 @@ Valid Login
     Input Username    ${VALID USER}
     Input Password    ${VALID PASSWORD}
     Submit Credentials
-    BuiltIn.Sleep 10
+    Sleep 10
     Welcome Page Should Be Open
     [Teardown]    Close Browser
