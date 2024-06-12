@@ -1,6 +1,6 @@
 *** Settings ***
 Library     RequestsLibrary
-Library     Selenium2Library
+Library     SeleniumLibrary
 Library     Collections
 Suite Setup    Authenticate as Admin
 
@@ -8,9 +8,9 @@ Suite Setup    Authenticate as Admin
 
 *** Test Cases ***
 Demo
-    Open Browser  https://www.google.com  ie
-    Input Text  id=lst-ib  Hollywood Celebrities
-    Click Button  Google Search
+    Open Browser  https://www.google.com  chrome
+    Input Text  id=APjFqb  Hollywood Celebrities
+    Click Button  gNO89b
 
 
 *** Keywords ***
