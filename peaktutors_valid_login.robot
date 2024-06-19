@@ -1,10 +1,18 @@
 *** Settings ***
-Documentation     A test suite with a single test for valid login.
+Documentation     A Wordpress test suite for Peaktutors website
 ...
-Resource            resources/resource.robot
-Resource            pwd/password.resource
+Resource            resources/wordpress.robot
+Resource            pwd/pwd_pt.resource
 
-#Variables           password.resource
+*** Variables ***
+${SERVER}         peaktutors.com
+${BROWSER}        Firefox
+${DELAY}          0
+${LOGIN URL}      https://${SERVER}/wp-admin/
+${WELCOME URL}    https://${SERVER}/my-account/
+${ERROR URL}      https://${SERVER}/error.html
+
+
 
 *** Test Cases ***
 Valid Login

@@ -11,6 +11,9 @@ Demo
     Open Browser  https://www.google.com  chrome
     Input Text  id=APjFqb  Hollywood Celebrities
     Click Button  gNO89b
+    BuiltIn.Sleep   10s
+    [Teardown]    Close Browser
+
 
 
 *** Keywords ***

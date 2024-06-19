@@ -3,13 +3,6 @@ Documentation     A resource file with reusable keywords and variables.
 ...
 Library           SeleniumLibrary
 
-*** Variables ***
-${SERVER}         peaktutors.com
-${BROWSER}        Firefox
-${DELAY}          0
-${LOGIN URL}      https://${SERVER}/wp-admin/
-${WELCOME URL}    https://peaktutors.com/my-account/
-${ERROR URL}      https://${SERVER}/error.html
 
 *** Keywords ***
 Open Browser To Login Page
